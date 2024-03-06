@@ -73,7 +73,7 @@ public class StringsAndThings {
     public Boolean gIsHappy(String input) {
 
         // TODO handle first and last character
-        for (int i = 1; i < input.length() - 1; i++) {
+        for (int i = 0; i < input.length() - 1; i++) {
             if (input.charAt(i) == 'g') {
                 if (input.charAt(i + 1) != 'g' && input.charAt(i - 1) != 'g'){
                     return false;
@@ -94,7 +94,7 @@ public class StringsAndThings {
      */
     public Integer countTriple(String input){
         int threeChars = 0;
-        for (int i = 1; i < input.length() - 3; i++) {
+        for (int i = 0; i < input.length() - 3; i++) {
 
             if (input.charAt(i) == input.charAt(i + 1) && input.charAt(i) == input.charAt(i +2)){
                     threeChars++;
